@@ -24,11 +24,15 @@ struct FirstHelloWorldFramework1Tests
         // Write your test here and use APIs like `#expect(...)` to check expected conditions...
         
         let firstHelloWorldFramework1:FirstHelloWorldFramework1 = FirstHelloWorldFramework1()
-        let sfirstHelloWorldFramework1Greeting:String           = firstHelloWorldFramework1.sayHello(to:"World")
+        let sfirstHelloWorldFramework1Greeting:String           = firstHelloWorldFramework1.sayHello()
+        let sfirstHelloWorldFramework2Greeting:String           = firstHelloWorldFramework1.sayHelloTo(to:"Everyone")
         
         print("\(sCurrMethodDisp) Intermediate 'sfirstHelloWorldFramework1Greeting' is [\(sfirstHelloWorldFramework1Greeting)]...")
+        print("\(sCurrMethodDisp) Intermediate 'sfirstHelloWorldFramework2Greeting' is [\(sfirstHelloWorldFramework2Greeting)]...")
         
         #expect(sfirstHelloWorldFramework1Greeting == "Hello, World!")
+        #expect(sfirstHelloWorldFramework2Greeting == "Hello, Everyone!")
+    //  #expect(sfirstHelloWorldFramework2Greeting == "Hello, World}, Everyone!")
         
         print("\(sCurrMethodDisp) Exiting...")
         
