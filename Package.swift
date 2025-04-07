@@ -1,4 +1,4 @@
-// swift-tools-version:5.9
+// swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -31,6 +31,6 @@ let package = Package(
             name: "FirstHelloWorldFramework1Tests",
             dependencies: ["FirstHelloWorldFramework1"]),
     ],
-    swiftLanguageVersions: [.v6]
+    swiftLanguageVersions: [.v5]
 )
 
