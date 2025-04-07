@@ -5,12 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "FirstHelloWorldFramework1",
-    platforms: [
-        .iOS(.v16),
-        .macOS(.v13),
-        .tvOS(.v16),
-        .watchOS(.v9)
-    ],
+//  platforms: [
+//      .iOS(.v16),
+//      .macOS(.v13),
+//      .tvOS(.v16),
+//      .watchOS(.v9)
+//  ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
