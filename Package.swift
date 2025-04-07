@@ -26,10 +26,15 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "FirstHelloWorldFramework1",
-            dependencies: []),
+            dependencies: [],
+            path: "FirstHelloWorldFramework1",
+        //  sources: ["Path1", "Path2", "SpecificSource.swift"],
+            ),
         .testTarget(
             name: "FirstHelloWorldFramework1Tests",
-            dependencies: ["FirstHelloWorldFramework1"]),
+            dependencies: ["FirstHelloWorldFramework1"],
+            path: "FirstHelloWorldFramework1Tests",
+            ),
     ],
     swiftLanguageVersions: [.v5]
 )
