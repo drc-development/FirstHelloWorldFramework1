@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 16.0.0, *)
 public class FirstHelloWorldFramework1
 {
     
