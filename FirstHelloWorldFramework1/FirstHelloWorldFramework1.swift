@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(macOS 10.15.0, *)
 @available(iOS 16.0.0, *)
 public class FirstHelloWorldFramework1
 {
@@ -52,7 +53,11 @@ public class FirstHelloWorldFramework1
 
         // Simulate some async processing...
 
-        try? await Task.sleep(for:.seconds(1))
+        if #available(macOS 13.0, *) {
+            try? await Task.sleep(for:.seconds(1))
+        } else {
+            // Fallback on earlier versions
+        }
 
         return "✨ \(greeting) ✨"
 
